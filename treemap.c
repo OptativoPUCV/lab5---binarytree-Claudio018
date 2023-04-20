@@ -76,7 +76,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     TreeNode* current = tree->root;
 
     while(current != NULL){
-        int valor = tree->lower_than(key,current->key);
+        int valor = tree->lower_than(key,current->pair->key);
         if(valor == 0){
             return current->pair;
         } else if (valor < 0){
