@@ -60,3 +60,20 @@ Thu 20 Apr 2023 10:33:09 PM UTC:
  tests:  3|8
 total_score: 0/70
 f329f6f
+Thu 20 Apr 2023 10:35:16 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:44:27: error: ‘false’ undeclared (first use in this function)
+   44 |     newTree->lower_than = false;
+      |                           ^~~~~
+treemap.c:5:1: note: ‘false’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    4 | #include "treemap.h"
+  +++ |+#include <stdbool.h>
+    5 | 
+treemap.c:44:27: note: each undeclared identifier is reported only once for each function it appears in
+   44 |     newTree->lower_than = false;
+      |                           ^~~~~
+Compilation failed
+08ba558
