@@ -77,7 +77,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
         
         if(tree->lower_than(key,nodeTree->pair->key)){
             nodeTree = nodeTree->left;
-            return current->pair;
         } else if (tree->lower_than(nodeTree->pair->key,key)){
             nodeTree = nodeTree->right;
         } else{
