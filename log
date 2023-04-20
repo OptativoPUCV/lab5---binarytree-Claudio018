@@ -123,3 +123,17 @@ Thu 20 Apr 2023 10:40:40 PM UTC:
  tests:  3|8
 total_score: 0/70
 06bfd3b
+Thu 20 Apr 2023 10:42:43 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:44:29: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   44 |     newTree->lower_than = (0,0);
+      |                             ^
+treemap.c:44:25: error: assignment to ‘int (*)(void *, void *)’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   44 |     newTree->lower_than = (0,0);
+      |                         ^
+cc1: all warnings being treated as errors
+Compilation failed
+f5e7db3
