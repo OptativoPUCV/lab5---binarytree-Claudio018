@@ -2,3 +2,26 @@ Thu 20 Apr 2023 10:09:03 PM UTC:
  tests:  1|8
 total_score: 0/70
 a187b08
+Thu 20 Apr 2023 10:30:21 PM UTC: 
+ treemap.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:41:23: error: invalid initializer
+   41 |     TreeMap newTree = (TreeMap *) malloc(sizeof(TreeMap));
+      |                       ^
+treemap.c:42:12: error: invalid type argument of ‘->’ (have ‘TreeMap’)
+   42 |     newTree->root = NULL;
+      |            ^~
+treemap.c:43:12: error: invalid type argument of ‘->’ (have ‘TreeMap’)
+   43 |     newTree->current = NULL;
+      |            ^~
+treemap.c:44:12: error: incompatible types when returning type ‘TreeMap’ but ‘TreeMap *’ was expected
+   44 |     return newTree;
+      |            ^~~~~~~
+treemap.c:45:1: error: control reaches end of non-void function [-Werror=return-type]
+   45 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+85a6fc3
