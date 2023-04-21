@@ -139,11 +139,8 @@ void removeNode(TreeMap * tree, TreeNode* node) {
             node->pair->value = next->pair->value;
             removeNode(tree,next);
         }
- 
     }
     
-    
-
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
@@ -180,7 +177,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    return NULL;
+    return (minimum(tree->root)->pair);
+    
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
