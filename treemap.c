@@ -74,11 +74,12 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
 
     insert->parent = parent;
     if(tree->lower_than(key,parent->pair->key)){
-        current->left = insert;
+        parent->left = insert;
     } else {
-        current->right = insert;
+        parent->right = insert;
     }
-        
+
+    tree->current = insert;
 
     
 }
