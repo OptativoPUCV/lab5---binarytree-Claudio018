@@ -69,6 +69,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         } else{
             current = current->right;
         }
+        if(current == NULL) break;
         
     }
 
