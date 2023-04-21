@@ -178,9 +178,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
 
 Pair * firstTreeMap(TreeMap * tree) {
     return (minimum(tree->root)->pair);
-    
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    return NULL;
+    if (tree->current->right != NULL)
+        return (minimum(tree->current->right)->pair);
+
+    
 }
