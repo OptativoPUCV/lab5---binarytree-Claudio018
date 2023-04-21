@@ -276,3 +276,9 @@ treemap.c:56:15: error: unused variable ‘insert’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 2cf0ef6
+Fri 21 Apr 2023 12:25:06 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|6
+total_score: 15/70
+76cee31
