@@ -195,5 +195,8 @@ Pair * nextTreeMap(TreeMap * tree) {
 
     if(parent != NULL) return parent->pair;
 
+    return NULL;
+    
+
     
 }
